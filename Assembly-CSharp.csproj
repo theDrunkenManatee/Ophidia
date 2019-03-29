@@ -60,9 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerLook.cs" />
-    <Compile Include="Assets\Scripts\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\TailScript.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerLook.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\TailScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Griff/Documents/GitHub/Ophidia/Ophidia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

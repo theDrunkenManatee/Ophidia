@@ -281,15 +281,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 211751599}
-  - component: {fileID: 211751605}
-  - component: {fileID: 211751604}
+  - component: {fileID: 211751600}
   - component: {fileID: 211751603}
   - component: {fileID: 211751602}
   - component: {fileID: 211751601}
-  - component: {fileID: 211751600}
+  - component: {fileID: 211751605}
+  - component: {fileID: 211751604}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211751598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
@@ -399,10 +399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Head: {fileID: 211751598}
   Tail: {fileID: 17893889}
-  tailLength: 12
-  lastPoint: {x: 0, y: 0, z: 0}
+  tailLength: 18
   tailGap: 1.1
-  lengthFromPoint: 0
 --- !u!114 &211751605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,7 +829,7 @@ GameObject:
   - component: {fileID: 960006394}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Minus7
+  m_TagString: Add5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
