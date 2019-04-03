@@ -42,6 +42,7 @@ public class TailScript : MonoBehaviour
             tailToPlace = Instantiate(Tail);
         }
         tailToPlace.transform.position = lastPoint;
+        tailToPlace.transform.LookAt(Head.transform);
         tailQueue.Enqueue(tailToPlace);
         lastPoint = Head.transform.position;
     }
