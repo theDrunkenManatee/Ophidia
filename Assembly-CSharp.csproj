@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CollisionHandler.cs" />
+    <Compile Include="Assets\Scripts\CollisionHelper.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\TailScript.cs" />
