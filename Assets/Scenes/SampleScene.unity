@@ -191,7 +191,6 @@ GameObject:
   m_Component:
   - component: {fileID: 211751599}
   - component: {fileID: 211751607}
-  - component: {fileID: 211751600}
   - component: {fileID: 211751606}
   - component: {fileID: 211751603}
   - component: {fileID: 211751602}
@@ -220,19 +219,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &211751600
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211751598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &211751601
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -309,9 +295,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Head: {fileID: 211751598}
-  Tail: {fileID: 1026023365}
+  Tail: {fileID: 1685701525}
   tailLength: 18
-  tailGap: 0.95
+  tailGap: 1.2
 --- !u!114 &211751605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +877,7 @@ GameObject:
   - component: {fileID: 1197430508}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Tail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,6 +1094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc10443565cff364d8e5cce22b2b2983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastHit: 
+  playerTail: {fileID: 211751604}
 --- !u!1 &1685701525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1110,7 @@ GameObject:
   - component: {fileID: 1685701526}
   m_Layer: 0
   m_Name: TailCube
-  m_TagString: Untagged
+  m_TagString: Tail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

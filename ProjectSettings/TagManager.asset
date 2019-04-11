@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Add5
   - Minus7
+  - Tail
   layers:
   - Default
   - TransparentFX

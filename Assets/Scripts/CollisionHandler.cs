@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
+    public string lastHit = "";
+    public TailScript playerTail;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,23 @@ public class CollisionHandler : MonoBehaviour
         
     }
 
-    public void HandleCollision(Collision col)
+    public void HandleHit(ControllerColliderHit hit)
     {
-        Debug.Log("Collision detected with tag " + col.gameObject.tag);
+        
+
+        if(hit.gameObject.name!=lastHit)
+        {
+            Debug.Log("CollisionHandler detected new hit between " + hit.controller.name  + " and " + hit.gameObject.tag);
+            if (hit.gameObject.tag == "Add5")
+            {
+                if (hit.controller.tag == "Player")
+                {
+                    playerTail.incrementTailBy(5);
+                }
+            }
+        }
+
+        lastHit = hit.gameObject.name;
+
     }
 }

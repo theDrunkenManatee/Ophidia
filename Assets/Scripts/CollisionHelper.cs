@@ -18,9 +18,10 @@ public class CollisionHelper : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision col)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("Collision detected with tag " + col.gameObject.tag);
-        handler.HandleCollision(col);
+        //Debug.Log("CollisionHelper detected hit with " + hit.gameObject.name);
+        handler.HandleHit(hit);
+
     }
 }

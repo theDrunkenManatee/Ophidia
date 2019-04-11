@@ -55,7 +55,8 @@ public class TailScript : MonoBehaviour
 
     public void incrementTailBy(int amnt)
     {
-        if(amnt<0)
+        Debug.Log("Incrementing tail by " + amnt);
+        if (amnt<0)
         {
             for(int x = 0; x<Mathf.Abs(amnt);x++)
             {
